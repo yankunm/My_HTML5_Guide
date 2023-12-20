@@ -9,14 +9,15 @@ Given some text, HTML "marks up" that text using *tags* to structure and organiz
 ## HTML Basic Elements
 
 Some basic tags for organizing text:
-* /<p/> - paragraph (chunk of content)
-* /<b/> - bring attention to (bold)
-* /<i/> italize
-* /<ol/> - ordered list with <li> list items
-* /<ul/> - unordered list with <li> list items
+* `<p>` - paragraph (chunk of content)
+* `<b>` - bring attention to (bold)
+* `<i>` - italize
+* `<ol>` - ordered list with `<li>` list items
+* `<ul>` - unordered list with `<li>` list items
 
 Sometimes tags have *attributes*, which is information passed to a tag:
-* /<a href=””/> - anchor/link tag 
-* /<img src=”” alt=””/> - image tag w/o closing
+* `<a href="">` - anchor/link tag 
+* `<img src="" alt="">` - image tag w/o closing
+
 
 
