@@ -11,7 +11,7 @@ Given some text, HTML "marks up" that text using *tags* to structure and organiz
 Some basic tags for organizing text:
 * `<p>` - paragraph (chunk of content)
 * `<b>` - bring attention to (bold)
-* `<i>` - italize
+* `<i>` - italicize
 * `<ol>` - ordered list with `<li>` list items
 * `<ul>` - unordered list with `<li>` list items
 
