@@ -117,8 +117,14 @@ e.g. Try it out by typing in your "query", or whatever you want to lookup, at th
 #### [Input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
 * `<input>` - element used to create 20+ varieties of form controls
-* `type=""` - attribute to specify what type of input we want (e.g. `text`, `password`, `color`, `number`, `checkbox` etc.)
+* `type=""` - attribute to specify what type of input we want (e.g. `text`, `password`, `color`, `number`, `checkbox`, `radio`, etc.)
 * `placeholder=""` - attribute to specify the text that shows up when its empty
+* `id=""` - attribute that is used for reference when labeling (unique for each input)
+* `name=""` - attribute that is the "key" of this input that the server will use (corresponding to user input "value")
+
+The **name attribute is crucial**, because when the data is sent it will be labeled using that name.
+
+Note: `id` is the reference this input element, `name` is the reference for the data in this input element. 
 
 #### [Label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 
@@ -129,6 +135,30 @@ Interactive text label for input crucial for accessibility.
 * `<input id="">` - attribute *id* is used for linking on the input side (it should be unique per input)
 
 Note: Usually Labels and Inputs are siblings
+
+#### [Buttons](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button)
+
+* `<button>` - the default action of button inside form is to submit the form (i.e. `type="submit"`)
+* `type=""` - attribute that specifies what type of button it is (e.g. `button`, `submit`)
+
+#### More Inputs
+
+Some other common inputs are:
+* `type="checkbox"` - this is a checkbox where you can also add attribute `checked` to make it intially checked
+* `type="radio"` - this is a select one and only one checkbox 
+
+Note: if you have multiple radio options with same `name` (same group), you have to specify not only `name` but also `value=""` so the server knows "what is on".
+
+* `type="range"` - Slide Bar with attributes `min=""` and `max=""`, also can give `step=""` (which is by default `step="1"`) and `value=""`, which is the initial value (these attributes also work with `type="number"`)
+
+Other common tags that are also inputs are:
+
+* `<select>` with multiple `<option>` - Drop down menu
+* `<textarea>` - Textbox where the user can input text
+
+
+
+
 
 
 
